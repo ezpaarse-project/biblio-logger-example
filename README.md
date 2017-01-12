@@ -5,6 +5,6 @@ Very basic example of biblio-broadcaster client. This is a simple page that uses
 ```bash
 git clone https://github.com/ezpaarse-project/biblio-logger-example.git
 cd biblio-logger-example
-docker-compose up-d
+docker-compose up -d
 ```
 Then access http://localhost:8080/
