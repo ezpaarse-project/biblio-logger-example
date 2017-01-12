@@ -9,10 +9,11 @@ var vm = new Vue({
   computed: {
     filteredEcs: function () {
       var self = this
+      var search = self.search.toLowerCase();
       return self.ecs.filter(function (ec) {
         for (var p in ec) {
           if (typeof ec[p] !== 'string') { continue; }
-          if (ec[p].indexOf(self.search) !== -1) { return true; }
+          if (ec[p].toLowerCase().indexOf(search) !== -1) { return true; }
         }
         return false;
       });
