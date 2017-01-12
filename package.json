@@ -1,0 +1,12 @@
+{
+  "name": "biblio-logger",
+  "version": "1.0.0",
+  "main": "index.js",
+  "license": "MIT",
+  "scripts": {
+    "start": "http-server public"
+  },
+  "dependencies": {
+    "http-server": "^0.9.0"
+  }
+}
